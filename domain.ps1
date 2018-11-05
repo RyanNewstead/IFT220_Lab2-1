@@ -30,7 +30,7 @@ $Readhost = Read-Host -Prompt ("y | n ")
      }
 
 # Install the AD Services
-Write-Host -ForegroundColor yellow "What's the domain name going to be?  It should be ad.Rnewstea.lan" 
+Write-Host -ForegroundColor yellow "What's the domain name going to be?  It should be ad.Rnewstead.lan" 
 $domainname = Read-Host -Prompt (" ")
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools | Out-Null
 Install-ADDSForest -DomainName $domainname
